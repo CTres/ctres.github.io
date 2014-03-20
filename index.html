@@ -13,6 +13,11 @@
     <![endif]-->
   </head>
   <body>
+    location / {
+    error_page 405 =200 $uri;
+    root /var/www/html/yoursite.com;
+}
+
     <div class="wrapper">
       <header>
         <h1>Ctres.github.io</h1>
@@ -60,6 +65,6 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+
   </body>
 </html>
